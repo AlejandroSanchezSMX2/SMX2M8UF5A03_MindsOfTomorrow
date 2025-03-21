@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página Responsive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: url('https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/08/01/64c927ca910e0.jpeg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .header-text {
+            color: white;
+            font-size: 5vw;
+            font-weight: bold;
+            width: 80%;
+            max-width: 1200px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+        @media (max-width: 700px) {
+            .header-text {
+                font-size: 7vw;
+                width: 90%;
+            }
+            .content h1 {
+                font-size: 2em;
+            }
+            .content p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+            Cielo con montañas muy altas llenas de nieve por encima
+        </div>
+    </header>
+    <section class="content">
+        <h1>Título de la Sección</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod, purus vel tincidunt vestibulum, urna lectus efficitur turpis, vel egestas ipsum metus in tortor. Duis et quam id ligula fermentum gravida.</p>
+    </section>
+</body>
+</html>
